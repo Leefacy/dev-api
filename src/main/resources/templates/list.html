@@ -1,0 +1,9 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<ul>
+		<li th:each="api : ${apis}">
+			<a th:text="${api.name}" th:href="@{'/api/get?key='+${api.key}}"></a>
+		</li>
+	</ul>
+</body>
+</html>

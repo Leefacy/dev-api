@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" href="F://teddy/dev/src/main/resources/static/api.css"/>
+</head>
+<body>
+	<div class="cApi" th:each="api : ${apis}">
+		<div class="cApiMsg" th:text="${api.apiVO.msg}"></div>
+		<div class="cApiKey" th:text="@{'key : '+${api.apiVO.key}}"></div>
+		<div class="cApiParams">参数 :</div>
+		<div class="cApiParam" th:each=" param : ${api.apiVO.params}">
+			<div class="cApiParamName" th:text="${param.name}"></div>
+			<div class="cApiParamType" th:text="${param.type}"></div>
+			<div class="cApiParamDesc" th:text="${param.desc}"></div>
+		</div>
+		<div class="cApiResult">返回结果:</div>
+		<pre th:text="${api.apiVO.result}"></pre>
+		<div class="cApiErrors">错误结果:</div>
+		<div class="cApiError" th:each="error : ${api.apiVO.errorCodes}">
+			<div class="cApiErrorCode" th:text="${error.code}"></div>
+			<div class="cApiErrorMsg" th:text="${error.msg}"></div>
+		</div>
+	</div>
+</body>
+</html>

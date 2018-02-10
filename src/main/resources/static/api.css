@@ -1,0 +1,52 @@
+.cApi {
+	text-align: center;
+	color: #000000;
+}
+
+.cApiMsg {
+	text-align: center;
+}
+
+.cApiKey {
+	text-align: center;
+}
+
+.cApiParams {
+	text-align: center;
+}
+
+.cApiParam {
+	text-align: center;
+}
+
+.cApiParamName {
+	text-align: center;
+}
+
+.cApiParamType {
+	text-align: center;
+}
+
+.cApiParamDesc {
+	text-align: center;
+}
+
+.cApiResult {
+	text-align: center;
+}
+
+.cApiErrors {
+	text-align: center;
+}
+
+.cApiError {
+	text-align: center;
+}
+
+.cApiErrorCode {
+	text-align: center;
+}
+
+.cApiErrorMsg {
+	text-align: center;
+}
